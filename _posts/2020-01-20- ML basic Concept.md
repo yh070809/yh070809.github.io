@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      machine learning  basic concept
+title:      Machine Learning  basic concept
 subtitle:   ML 笔记总结 01
 date:       2020-01-03
 author:     Kaiyun

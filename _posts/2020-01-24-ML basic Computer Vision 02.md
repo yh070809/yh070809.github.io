@@ -2,7 +2,7 @@
 layout:     post
 title:      ML  Computer  Vision 02
 subtitle:   ML 笔记总结 04
-date:       2020-01-17
+date:       2020-01-24
 author:     Kaiyun
 header-img: img/post-bg-ios9-web.jpg
 catalog: true

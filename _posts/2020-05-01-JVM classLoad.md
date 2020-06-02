@@ -26,7 +26,7 @@ load >> verify >> prepare >> analysis >> init >> use >> unload
 
 加载 >> 验证 >> 准备 >> 解析 >> 初始化 >> 使用 >> 卸载
 
-![类加载过程]('img/classLoad.png' "classLoad Process")
+![类加载过程](postImg/classLoad.png)
 
 
 ### parents delegates 双亲委派机制 
@@ -47,6 +47,10 @@ Safety： to protect core function class (e.g. String Class) not been override
 prevent repeat load : if parents already load the class , then no need to reload the class again
 
 避免类的重复加载：当父亲已经加载了该类时，就没有必要子ClassLoader再   加载一次
+
+![双亲委派机制](postImg/classLoad2.png)
+
+
 
 
  

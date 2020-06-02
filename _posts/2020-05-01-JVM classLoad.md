@@ -26,4 +26,27 @@ load >> verify >> prepare >> analysis >> init >> use >> unload
 
 加载 >> 验证 >> 准备 >> 解析 >> 初始化 >> 使用 >> 卸载
 
-![类加载过程]('../img/classLoad.png' "classLoad Process")
+![类加载过程]('img/classLoad.png' "classLoad Process")
+
+
+### parents delegates 双亲委派机制 
+
+When load a  class , first  delegates it's parents to find the target , if parents can not find then ask parents ' parents (upper lever) , if still can not find , then find the class under self path
+
+这里类加载其实就有一个双亲委派机制，加载某个类时会先委托父加载器寻找目标类，找不
+到再委托上层父加载器加载，如果所有父加载器在自己的加载类路径下都找不到目标类，则
+在自己的类加载路径中查找并载入目标类。
+
+advantage:
+优点：
+
+Safety： to protect core function class (e.g. String Class) not been override 
+
+沙箱安全机制：自己写的String.class类不会被加载，这样便可以防止核心API库被随意篡改
+
+prevent repeat load : if parents already load the class , then no need to reload the class again
+
+避免类的重复加载：当父亲已经加载了该类时，就没有必要子ClassLoader再   加载一次
+
+
+ 

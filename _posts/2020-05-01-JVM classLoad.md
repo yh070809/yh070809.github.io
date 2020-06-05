@@ -47,7 +47,7 @@ prevent repeat load : if parents already load the class , then no need to reload
 
 避免类的重复加载：当父亲已经加载了该类时，就没有必要子ClassLoader再   加载一次
 
-![双亲委派机制](https://ibb.co/zS0Gtpj)
+![双亲委派机制](https://photos.google.com/album/AF1QipMkJ5DoGYGQcj50CWNJPec4QukHma3HdMzvNFwm/photo/AF1QipMnHqs5cVjCnecOZ-34Vkzwplz-E3iPtfwgovkL)
 
 
 
